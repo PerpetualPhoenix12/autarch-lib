@@ -1,0 +1,24 @@
+{
+  "name": "autarch-lib",
+  "version": "1.0.0",
+  "description": "Novel tracking library",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "author": "PerpetualPhoenix",
+  "license": "GPL",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "nodemailer": "^6.4.10",
+    "nodemon": "^1.19.4",
+    "redis": "^3.0.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
