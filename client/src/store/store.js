@@ -3,30 +3,6 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex);
 
-/*export const store = new Vuex.Store({
-	state: {
-        novels: [],
-        uid: null
-	},
-	getters: {
-		filterList: state => status => state.novels.filter(novel => novel.status === status) 
-	},
-	mutations: {
-		modify: (state, payload) => {
-			const index = state.novels.findIndex(item => item.id === payload.doc.id);
-			state.novels[index] = payload.doc.data();
-		},
-		add: (state, payload) => {
-			state.novels.push({
-				...payload.doc.data(),
-				id: payload.doc.id
-			})
-		},
-		clear: state => state.novels = [],
-		setUID: (state, uid) => state.uid = uid
-	}
-});*/
-
 export const store = new Vuex.Store({
 	state: {
 		novels: {'reading': [], 'paused': [], 'completed': [], 'dropped': [], 'planned': []},

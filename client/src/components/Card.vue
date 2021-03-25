@@ -5,13 +5,12 @@
                     <v-layout column fill-height class="white--text">
                         <div class="fill-height grad"></div>
                      <!--   
-                        TODO: Finalise card design and make this author overlay look better on the card images.
-
                             <v-flex shrink style="background-color: rgba(53, 49, 49, 0.9);" class="pa-1">
                             <a :href="`https://www.novelupdates.com/nauthor/${formatLink(novel.author)}`" target="_blank">
                                 <div class="caption orange--text darken-4 font-weight-medium font-italic">{{ novel.author }}</div>
                             </a>
-                        </v-flex> -->
+                        </v-flex> 
+                      -->
                     </v-layout>
                 </v-img></a>
         </v-flex>

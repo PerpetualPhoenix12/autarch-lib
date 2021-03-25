@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import { auth } from '@/fb.js'
-import Dashboard from './views/Dashboard.vue'
 import Library from './views/Library.vue'
 import Autarchs from './views/Autarchs.vue'
 import ImportList from './views/ImportList.vue'

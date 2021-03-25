@@ -1,20 +1,19 @@
 const redis = require('./redis_client');
+
 const client = redis.connect();
 
+function novelInfoCache(req, res, next) {
+  const { url } = req.body;
 
-function novelInfoCache (req, res, next) {
-    const url = req.body.url;
-
-    client.hgetall("novel:"+url, (err, data) => {
-        if (err) throw err;
-        if (data != null) {
-            const novelInfo = [data.title, data.coverUrl, data.author, data.type];
-            res.send(novelInfo);
-        } else {
-            next();
-        }
-    })
+  client.hgetall(`novel:${url}`, (err, data) => {
+    if (err) throw err;
+    if (data != null) {
+      const novelInfo = [data.title, data.coverUrl, data.author, data.type];
+      res.send(novelInfo);
+    } else {
+      next();
+    }
+  });
 }
-
 
 module.exports = novelInfoCache;

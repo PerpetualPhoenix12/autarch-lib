@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:vue/essential",
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 10
+    },
+    "plugins": [
+        "vue"
+    ],
+    "ignorePatterns": ["public/", "middleware/"],
+    "rules": {
+      "no-console": 0,
+      "no-plusplus": 0,
+      "no-await-in-loop": 0,
+      "no-use-before-define": 0
+    }
+}
