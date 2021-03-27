@@ -27,9 +27,10 @@ See https://git-scm.com/downloads for the latest Git versions.
 
 ## Deployment - Local
 
-To get it working, enter the server directory and  run ```npm start```:
+To get it working, enter the server directory, install the necessary packages, run the start script:
 ```
 cd server
+npm i
 npm start
 ```
 This will start the application on port 4000. If you have any applications running on this port, then you can create a `.env` file and specify the `PORT=` value, or just edit the default one in  `server/index.js`
